@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Form</title>
+		<link href="style.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Rubik:300,400" rel="stylesheet">	
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">		
+	</head>
+	<body>
+		<div class="main">
+		<div class="content">
+				<div class="flex-row">
+					<div class="left-box"></div>
+					<div class="right-box">
+						<h1>Your account</h1>
+					</div>
+				</div>
+				<div class="flex-row">
+					<div class="left-box form-img">
+						
+					</div>
+					<div class="right-box bg-white">
+						<form name="account-form" action="" method="post">
+							<p>Take it all with you. Switch between devices, and pick up.</p>
+							<div class="name-section fielddgroup">
+								<div class="flex-row label">
+									<label>Your name</label>
+									<span class="error"></span>
+								</div>
+								<div>
+									<input type="text" name="name">
+								</div>
+							</div>
+							<div class="mobile-section fielddgroup">
+								<div class="flex-row label">
+									<label>Mobile</label>
+									<span class="error"></span>
+								</div>
+								<div class="flex-row">
+									<select size="1">
+										<option value="+48">+48(PL)</option>
+										<option value="+38">+38(UA)</option>
+									</select>
+									<input type="text" name="phone" placeholder="123456">
+								</div>
+							</div>
+							<div class="gender-section fielddgroup">
+								<div class="flex-row label">
+									<label>Gender</label>
+								</div>
+								<div class="flex-row">
+									<div class="gender-female">
+										<input type="radio" name="gender" value="female">
+									<span></span>
+									</div>
+									<div class="gender-male">
+										<input type="radio" name="gender" value="male" checked>
+									<span></span>
+									</div>
+								</div>
+							</div>
+							<div class="birth-section fielddgroup">
+								<div class="flex-row label">
+									<label>Date of Birth</label>
+								</div>
+								<div class="flex-row">
+									<input type="text" name="day" placeholder="01">
+									<span class="dash"></span>
+									<input type="text" name="month" placeholder="January">
+									<span class="dash"></span>
+									<input type="text" name="year" placeholder="1990">
+								</div>
+							</div>
+							<div class="submit-section">
+								<button type="submit"><span>Continue</span><span class="icon"><img src="./img/arrow.png"></span>
+							</div>
+						</form>
+						
+					</div>
+				</div>
+		</div>
+		</div>
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="mysctipts.js"></script>
+	</body>
+</html>
